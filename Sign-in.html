@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <style>
+        #box{
+            background-color:brown;
+            color: aliceblue;
+            display: inline;
+            margin: 10px;
+            padding: 5px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            padding: 8px;
+        }
+        body{
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header {
+            background-color: #243763;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+
+        .nav li {
+            margin-left: 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>arabul.com</h1>
+      
+        <ul class="nav">
+          <li><a href="#">About</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="Shopping-Cart.html">Shopping Cart</a></li>
+          <li><a href="Sign-in.html">Sign-in</a></li>
+        </ul>
+    </div>
+    <br><br><br><br>
+    <label for="">e-mail: </label><br><input type="email"><br></br>
+    <label for="">Password: </label><br><input type="password"><br><br>
+    <input type="radio" name="userType" id="seller" value = "Seller">
+    <label for="seller">Seller</label><br>
+    <input type="radio" name="userType" id="customer" value = "Customer">
+    <label for="customer">Customer</label><br> <br>
+    <input type="button" value="Sign-in" id="box"> 
+    <a href="Register.html"></a><input type="button" value="Register" id="box">
+</body>
+</html>

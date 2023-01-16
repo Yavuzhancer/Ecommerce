@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addProduct</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        img{
+            position: relative;
+            text-align: end;
+        }
+        #addButton{
+            margin-top: 6px;
+            background-color:teal;
+            color: beige;
+            padding: 5px;
+            width: 100px;
+            font-style:italic;
+            margin-right: 40px;
+            position:absolute;
+            text-align: center;
+            border-color:black;
+            border-radius: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header {
+            background-color: #243763;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+
+        .nav li {
+            margin-left: 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+        }
+        #button{
+            margin-top: 6px;
+            background-color: beige;
+            color: black;
+            padding: 5px;
+            margin-right: 40px;
+            position:absolute;
+            text-align: center;
+            border-color:cornflowerblue;
+            border-radius: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #headerId{
+            text-align: center;
+            color: #243763;
+            text-shadow: 3px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #textId{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>arabul.com</h1>
+      
+        <ul class="nav">
+          <li><a href="#">About</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="Shopping-Cart.html">Shopping Cart</a></li>
+          <li><a href="Sign-in.html">Sign-in</a></li>
+        </ul>
+    </div>
+    <h1 id="headerId">Add a new product to sell</h1>
+
+    <label for="" id="textId">Name of the product: </label> <input type="text" name="productName"> <br> <br>
+    <label for="" id="textId">Quantity of the product: </label> <input type="number" name="quantity"> <br> <br>
+    <label for=""  id="textId">Price per item(Euro): </label>  <input type="number" name="price"> <br> <br>
+    <label for=""  id="textId">Category: </label> 
+    <select id="selector">
+        <option value="food">Food</option>
+        <option value="clothing">Clothing</option>
+        <option value="educational">Educational</option>
+        <option value="tudelft">TUDelft</option>
+        <option value="beverage">Beverages</option>
+        <option value="automobile">Automobile</option>
+        <option value="other">other</option>
+    </select> <br><br>
+    <input type="button" value="Upload Image" id="button">
+    <br><br>
+    <hr>
+    <label for=""  id="textId">About the product: </label> <br> <textarea name="aboutPorduct" cols="40" rows="4"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Add Product" id="addButton">
+
+</body>
+</html>
