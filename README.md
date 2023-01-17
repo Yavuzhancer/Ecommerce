@@ -1,1 +1,0 @@
-# Yavuzhancer-github.io
